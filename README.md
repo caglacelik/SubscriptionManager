@@ -1,2 +1,2 @@
 # SubscriptionManager
-Subscription management system  which includes #AspNetCore6 #EFCore #CodeFirst #MSSQL #WebAPI
+Subscription management system backend implementation which includes #AspNetCore6 #EFCore #CodeFirst #MSSQL #WebAPI
