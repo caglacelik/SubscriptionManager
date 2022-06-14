@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "w1UBhFdaRSIcpe36tACrxm/DsckElSTmaJ9960iGqBcPArX8KsEfrN0Ro2K4cFHiO31nBPUKnV1TeFio2j1t7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mvi\\Desktop\\subscriptionmanagerproject\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mvi\\.nuget\\packages\\dataannotationsextensions\\5.0.1.27\\dataannotationsextensions.5.0.1.27.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DataAnnotationsExtensions 5.0.1.27' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DataAnnotationsExtensions",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

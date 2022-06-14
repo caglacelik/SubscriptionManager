@@ -1,0 +1,17 @@
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\bin\Debug\net6.0\Core.dll
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\bin\Debug\net6.0\Core.pdb
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\mvi\source\repos\SubsManagerProject\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
