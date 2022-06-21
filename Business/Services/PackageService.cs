@@ -4,7 +4,7 @@ using Core.Entities;
 using Core.Repositories;
 using Core.Services;
 using Core.UnitOfWork;
-using Service.Services.Exceptions;
+using Service.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,6 @@ namespace Service.Services
     public class PackageService : Service<Package>, IPackageService
     {
         private readonly IPackageRepository _packageRepository;
-        IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         public PackageService(IGenericRepository<Package> genericRepository, IUnitOfWork unitOfWork, IPackageRepository packageRepository, IMapper mapper) : base(genericRepository, unitOfWork)
         {
@@ -30,9 +29,8 @@ namespace Service.Services
             var packages = await _packageRepository.GetPackagesWithProductId(productId);
 
             if(!packages.Any())
-            {
-                throw new NotFoundException("not found");
-            }
+            throw new NotFoundException("not found");
+
             return packages;
         }
 

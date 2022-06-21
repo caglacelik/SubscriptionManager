@@ -47,6 +47,14 @@
             "DataAnnotationsExtensions": {
               "target": "Package",
               "version": "[5.0.1.27, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [

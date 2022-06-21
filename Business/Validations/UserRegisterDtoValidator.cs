@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Service.Validations
 {
-    public class UserRegisterDtoValidator : AbstractValidator<UserDto>
+    public class UserRegisterDtoValidator : AbstractValidator<UserRegisterDto>
     {
         public UserRegisterDtoValidator()
         {

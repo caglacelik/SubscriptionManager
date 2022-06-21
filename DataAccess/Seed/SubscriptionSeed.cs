@@ -15,38 +15,38 @@ namespace Repositories.Seed
         {
             builder.HasData(new Subscription
             {
-                Id = 1,
-                FinishDate = new DateTime(2022,7,10),             
-                UserId=1,
-                PackageId=3
-            },
-            new Subscription
-            {
-                Id = 2,
-                FinishDate = new DateTime(2022, 8, 10),
-                UserId = 1,
-                PackageId = 9
-            },
-            new Subscription
-            {
-                Id = 3,
-                FinishDate = new DateTime(2022, 9, 10),
-                UserId = 1,
+                Id = 10,
+                FinishDate = new DateTime(2022, 7, 11),
+                UserId = 5,
                 PackageId = 4
             },
             new Subscription
             {
+                Id = 2,
+                FinishDate = new DateTime(2022, 8, 11),
+                UserId = 5,
+                PackageId = 5
+            },
+            new Subscription
+            {
+                Id = 3,
+                FinishDate = new DateTime(2022, 8, 16),
+                UserId = 5,
+                PackageId = 8
+            },
+            new Subscription
+            {
                 Id = 4,
-                FinishDate = new DateTime(2022, 10, 10),
-                UserId = 1,
-                PackageId = 10
+                FinishDate = new DateTime(2022, 10, 15),
+                UserId = 5,
+                PackageId = 12
             },
             new Subscription
             {
                 Id = 5,
-                FinishDate = new DateTime(2022, 11, 10),
-                UserId = 1,
-                PackageId = 14
+                FinishDate = new DateTime(2022, 11, 12),
+                UserId = 5,
+                PackageId = 13
             });
         }
     }

@@ -14,6 +14,8 @@ namespace Core.Services
         Task<List<ExpenseDto>> GetSubscriptionsByCategory(int userId, string categoryName);
         Task<TotalExpenseDto> GetTotalExpenses(int userId);
         Task<SubscriptionDto> GetBySubscriptionId(int subscriptionId);
+        Task<List<ChartDto>> GetChartData();
+
 
     }
 }

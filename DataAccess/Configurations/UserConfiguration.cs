@@ -13,7 +13,7 @@ namespace Repositories.Configurations
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.Property(x => x.Id).UseIdentityColumn(1,1);
+            builder.Property(x => x.Id).IsRequired().UseIdentityColumn(24693647,7);
             builder.Property(x => x.Email).IsRequired().HasMaxLength(128);
             builder.Property(x => x.Password).IsRequired().HasMaxLength(50);
             builder.Property(x => x.PhoneNumber).HasMaxLength(10).IsFixedLength();

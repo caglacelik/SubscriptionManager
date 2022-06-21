@@ -25,11 +25,7 @@ namespace Service.Services
 
         public async Task<List<ProductDto>> GetProductsWithCategory(string categoryName)
         {
-            var products = await _productRepository.GetProductsWithCategory(categoryName);
-            var productsDto= _mapper.Map<List<ProductDto>>(products);
-            return productsDto;
-
-
+            return _mapper.Map<List<ProductDto>>(await _productRepository.GetProductsWithCategory(categoryName));
         }
     }
 }

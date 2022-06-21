@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[11.0.1, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -140,6 +144,14 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [
@@ -204,6 +216,14 @@
             "DataAnnotationsExtensions": {
               "target": "Package",
               "version": "[5.0.1.27, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [

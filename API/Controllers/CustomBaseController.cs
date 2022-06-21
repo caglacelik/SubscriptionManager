@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class CustomBaseController : ControllerBase
     {
@@ -12,7 +12,6 @@ namespace API.Controllers
         [NonAction]
         public IActionResult CreateActionResult<T>(CustomResponseDto<T> response)
         {
-            // 204 no content
             if (response.StatusCode == 204)
                 return new ObjectResult(null)
                 {

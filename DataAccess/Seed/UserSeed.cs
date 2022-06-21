@@ -16,7 +16,7 @@ namespace Repositories.Seed
         {
             builder.HasData(new User
             {
-                Id = 1,
+                Id = 5,
                 Email = "caglacelikkk@hotmail.com",
                 Password = "12345",
                 PhoneNumber = "0123456789"

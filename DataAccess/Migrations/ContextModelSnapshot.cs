@@ -22,6 +22,20 @@ namespace Repositories.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Core.DTOs.ChartDto", b =>
+                {
+                    b.Property<int>("CountOf")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("ChartDto", (string)null);
+                });
+
             modelBuilder.Entity("Core.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -362,9 +376,6 @@ namespace Repositories.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("BillCycle")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("FinishDate")
                         .HasColumnType("datetime2");
 
@@ -388,43 +399,38 @@ namespace Repositories.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
-                            BillCycle = 1,
-                            FinishDate = new DateTime(2022, 7, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            PackageId = 3,
-                            UserId = 1
+                            Id = 10,
+                            FinishDate = new DateTime(2022, 7, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PackageId = 4,
+                            UserId = 5
                         },
                         new
                         {
                             Id = 2,
-                            BillCycle = 3,
-                            FinishDate = new DateTime(2022, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            PackageId = 9,
-                            UserId = 1
+                            FinishDate = new DateTime(2022, 8, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PackageId = 5,
+                            UserId = 5
                         },
                         new
                         {
                             Id = 3,
-                            BillCycle = 1,
-                            FinishDate = new DateTime(2022, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            PackageId = 4,
-                            UserId = 1
+                            FinishDate = new DateTime(2022, 8, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PackageId = 8,
+                            UserId = 5
                         },
                         new
                         {
                             Id = 4,
-                            BillCycle = 1,
-                            FinishDate = new DateTime(2022, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            PackageId = 10,
-                            UserId = 1
+                            FinishDate = new DateTime(2022, 10, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PackageId = 12,
+                            UserId = 5
                         },
                         new
                         {
                             Id = 5,
-                            BillCycle = 12,
-                            FinishDate = new DateTime(2022, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            PackageId = 14,
-                            UserId = 1
+                            FinishDate = new DateTime(2022, 11, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PackageId = 13,
+                            UserId = 5
                         });
                 });
 
@@ -434,7 +440,7 @@ namespace Repositories.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 24693647L, 7);
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -458,7 +464,7 @@ namespace Repositories.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Id = 5,
                             Email = "caglacelikkk@hotmail.com",
                             Password = "12345",
                             PhoneNumber = "0123456789"

@@ -41,7 +41,6 @@ namespace Repositories.Repositories
                 PackageName = x.Package.Name
             }).ToListAsync();
     }
-
         public async Task<TotalExpenseDto> GetTotalExpenses(int userId)
         {
 
@@ -63,7 +62,7 @@ namespace Repositories.Repositories
                 Select(x => new SubscriptionDto()
                 {
                     Id = x.Id,
-                    FinishDate = x.FinishDate,
+                    FinishDate = x.FinishDate.Date.ToString("yyyy-MM-dd"),
                     ProductName = x.Package.Product.Name,
                     CategoryName = x.Package.Product.Category.Name,
                     PackageName = x.Package.Name,
@@ -72,7 +71,9 @@ namespace Repositories.Repositories
                     Packages = x.Package.Product.Packages.ToList(),
             }).SingleOrDefaultAsync();
         }
-
-
+        public async Task<List<ChartDto>> GetChartData()
+        {
+            return await _context.ChartDto.FromSqlRaw("GetChartData").ToListAsync();
+        }
     }
 }

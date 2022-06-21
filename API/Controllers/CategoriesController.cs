@@ -6,8 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class CategoriesController : CustomBaseController
     {
         private readonly IMapper _mapper;
@@ -19,12 +17,13 @@ namespace API.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("[action]")]
+        [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
             var categories = await _categoryService.GetAllAsync();
             var categoriesDto = _mapper.Map<List<CategoryDto>>(categories.ToList());
             return CreateActionResult(CustomResponseDto<List<CategoryDto>>.Success(200, categoriesDto));
         }
+
     }
 }

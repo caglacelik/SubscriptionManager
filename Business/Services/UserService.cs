@@ -4,7 +4,7 @@ using Core.Entities;
 using Core.Repositories;
 using Core.Services;
 using Core.UnitOfWork;
-using Service.Services.Exceptions;
+using Service.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +25,9 @@ namespace Service.Services
         public async Task<UserLoginDto> Login(UserLoginDto userLoginDto)
         {
             var user = await _userRepository.Login(_mapper.Map<User>(userLoginDto));
-            if (user == null)
-            {
-                throw new NotFoundException("User can not be found");
-            }
+            if (!(user.Id == userLoginDto.Id))
+            throw new NotFoundException("User can not be found");
+
             return _mapper.Map<UserLoginDto>(user);
         }
     }

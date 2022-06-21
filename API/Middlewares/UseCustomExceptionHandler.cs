@@ -1,6 +1,6 @@
 ﻿using Core.DTOs;
 using Microsoft.AspNetCore.Diagnostics;
-using Service.Services.Exceptions;
+using Service.Exceptions;
 using System.Text.Json;
 
 namespace API.Middlewares
