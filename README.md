@@ -1,7 +1,5 @@
 # SubscriptionManager
-Subscription management system which includes AspNetCore6, EFCore, WebAPI and React JS. 
-Database is created and managed in MSSQL with code first technique.
-Project also includes Repository and Unit of Work Patterns.
+This project was build for users can manage their subscriptions. System includes .NET CORE, EF Core, WebAPI and React JS. Database is created and managed in MSSQL with code first technique. Project also includes Repository and Unit of Work Patterns.
 
 ![dashboard](https://user-images.githubusercontent.com/93754343/175993645-253f7e1e-5042-494e-9af0-f70930036892.png)
 
